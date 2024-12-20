@@ -1,0 +1,46 @@
+<!-- res/layout/item_featured.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+
+    <!-- Seller Information Section -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seller Information"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Image View (for displaying item images) -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Bookmark/Flag icon -->
+    <ImageView
+        android:id="@+id/bookmark_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-24dp"
+        />
+    <TextView
+        android:id="@+id/seller_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seller Information"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Search Bar -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:queryHint="Search items"
+            android:iconifiedByDefault="false"
+            android:layout_margin="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:tabTextAppearance="@style/CustomTabTextAppearance"
+                app:tabIndicatorColor="#78103C"
+                app:tabSelectedTextColor="#78103C"
+                app:tabTextColor="#78103C"
+                >
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="#78103C"
+                    android:text="About"
+                    />
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Review"
+                    android:textColor="#78103C"
+                    />
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Author"
+                    android:textColor="#78103C"
+                    />
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/framelayout_audio"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="5dp">
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="-8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
