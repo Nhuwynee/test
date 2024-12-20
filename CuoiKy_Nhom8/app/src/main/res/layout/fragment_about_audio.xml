@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="AboutAudioFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:paddingLeft="10dp"
+        android:text="Bơ đi mà sống của nữ tác giả Mèo Xù là cuốn tản văn tràn đầy năng lượng sống khi truyền những cảm hứng chân thật nhất về cuộc đời, tình yêu, tình bạn, tình thân. Mèo Xù đã từng rất chán ghét chính bản thân mình, nhưng rồi cô nhận ra cuộc đời này đã ban tặng cho cô quá nhiều thứ tốt đẹp khác, và “Bơ đi mà sống” ra đời tự nhiên như cách cô luôn nhìn thấy lạc quan trong những bi quan nhất."
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ReviewAudioFragment">
+
+    <TextView
+        android:id="@+id/frangment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Sách 'Bơ đi mà sống' không chỉ mang đến những bài học ý nghĩa về việc buông bỏ phiền muộn, mà dưới dạng sách nói, nó càng trở nên tiện lợi hơn. Tôi có thể nghe khi đang làm việc nhà, lái xe hay thư giãn, giúp tận dụng thời gian hiệu quả mà vẫn nắm bắt được nội dung. Một trải nghiệm nhẹ nhàng và thư thái!"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+</FrameLayout>
