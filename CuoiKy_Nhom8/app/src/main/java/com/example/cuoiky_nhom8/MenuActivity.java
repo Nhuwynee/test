@@ -1,6 +1,9 @@
 package com.example.cuoiky_nhom8;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1970e5f3b1780c5b82993be23fa639c8f0d839f6
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -23,6 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         // Load fragment mặc định khi mở ứng dụng
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
+
         }
 
         // Gắn sự kiện cho BottomNavigationView
@@ -35,7 +39,7 @@ public class MenuActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
                 }
                 if (id == R.id.nav_feed) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new DetailFragment()).commit();
                 }
                 if (id == R.id.nav_settings) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
