@@ -1,5 +1,4 @@
 package com.example.cuoiky_nhom8;
-
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -21,30 +20,32 @@ public class MenuActivity extends AppCompatActivity {
 
         // Load fragment mặc định khi mở ứng dụng
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, new SearchFragment()).commit();
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
+
         }
 
         // Gắn sự kiện cho BottomNavigationView
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    int id = item.getItemId();
-                    if (id == R.id.nav_featured) {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, new SearchFragment()).commit();
-                    }
+
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.nav_featured) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
+                }
                 if (id == R.id.nav_feed) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new FilterFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new DetailFragment()).commit();
                 }
                 if (id == R.id.nav_settings) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new PageWomenFragment()).commit();
                 }
                 if (id == R.id.nav_profile) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new TabFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ShopFragment()).commit();
                 }
-
-                    return true;
-                }
+                return true;
+            }
 
         });
     }
