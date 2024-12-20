@@ -37,7 +37,7 @@ public class MenuActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new FilterFragment()).commit();
                 }
                 if (id == R.id.nav_settings) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new WomenFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new PageWomenFragment()).commit();
                 }
                 if (id == R.id.nav_profile) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new TabFragment()).commit();
